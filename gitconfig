@@ -52,3 +52,6 @@
 
 [init]
   defaultBranch = master
+[user]
+	email = eduardotps@gmail.com
+	name = Eduardo Thomazoni
