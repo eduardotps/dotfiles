@@ -70,3 +70,11 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+dexec() {
+    docker exec -it $1 sh -c $2
+}
+alias ownership='sudo chown -R $USER:$USER .' # run it if you see a permission denied error
+alias app-init='sh init.sh' # run to create the enviroment
+alias app-start='sh start.sh' #  run every time you want to start the app.
+                              # It will run migrations and gem or packegesinstalations
